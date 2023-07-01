@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`withGleamTemplate > wraps the code in a function 1`] = `
+"
+import espresso/html.{Element, a, c, t, txt}
+
+pub fn sample() -> Element {
+  t(\\"div\\") |> c([t(\\"span\\") |> c([t(\\"div\\") |> a(\\"class\\", \\"text-black\\") |> c([txt(\\"Text here\\")])])])
+}
+"
+`;
