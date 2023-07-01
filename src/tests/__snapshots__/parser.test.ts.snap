@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`toGleam > converts GleamableNodes into gleam code 1`] = `"t(\\"div\\") |> c([t(\\"span\\") |> c([t(\\"div\\") |> a(\\"class\\", \\"text-black\\") |> c([txt(\\"Text here\\")])])])"`;
+
+exports[`traverseDOM > generates an internal representation for gleam node output 1`] = `
+{
+  "attributes": [],
+  "children": [
+    {
+      "content": "",
+      "type": "text",
+    },
+    {
+      "attributes": [],
+      "children": [
+        {
+          "content": "",
+          "type": "text",
+        },
+        {
+          "attributes": [
+            {
+              "name": "class",
+              "value": "text-black",
+            },
+          ],
+          "children": [
+            {
+              "content": "Text here",
+              "type": "text",
+            },
+          ],
+          "tag_name": "div",
+          "type": "element",
+        },
+        {
+          "content": "",
+          "type": "text",
+        },
+      ],
+      "tag_name": "span",
+      "type": "element",
+    },
+    {
+      "content": "",
+      "type": "text",
+    },
+  ],
+  "tag_name": "div",
+  "type": "element",
+}
+`;
